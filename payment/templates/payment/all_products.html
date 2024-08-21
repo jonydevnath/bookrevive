@@ -25,7 +25,7 @@
                 <th scope="row"><a class="text-decoration-none text-dark" href="">#{{ product.id }}</a></th>
                 <td>{{ product.name }}</td>
                 <td>{{ product.price }}</td>
-                <td><img src="{{ product.image.url }}" alt="{{ product.name }}" width="50"></td>
+                <td><img src="{{ product.image_url }}" alt="{{ product.name }}" width="50"></td>
                 <td>{{ product.category.name }}</td>
                 <td>
                     <a href="{% url 'product_edit' product.id %}" class="btn btn-sm btn-secondary text-white">Edit</a>
