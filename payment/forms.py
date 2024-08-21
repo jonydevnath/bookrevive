@@ -25,12 +25,12 @@ class PaymentForm(forms.ModelForm):
 class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
-        fields = ['name', 'price', 'description', 'image', 'category', 'is_sale', 'sale_price']
+        fields = ['name', 'price', 'description', 'image_url', 'category', 'is_sale', 'sale_price']
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-control mt-2', 'placeholder': 'Product Name'}),
             'price': forms.NumberInput(attrs={'class': 'form-control mt-2', 'placeholder': 'Product Price'}),
             'description': forms.Textarea(attrs={'class': 'form-control mt-2', 'placeholder': 'Product Description', 'rows': 4}),
-            'image': forms.ClearableFileInput(attrs={'class': 'form-control mt-2'}),
+            'image_url': forms.ClearableFileInput(attrs={'class': 'form-control mt-2'}),
             'category': forms.Select(attrs={'class': 'form-control mt-2'}),
             'is_sale': forms.CheckboxInput(attrs={'class': 'form-check-input mt-2'}),
             'sale_price': forms.NumberInput(attrs={'class': 'form-control mt-2', 'placeholder': 'Sale Price'}),
