@@ -1,6 +1,6 @@
 # BookRevive
 
-BookRevive is a Django-based online bookstore and e-commerce project for selling books and managing customer orders. The application includes product browsing, a shopping cart, checkout, user profile management, and an admin dashboard for product and order administration.
+BookRevive is a Django-based online bookstore and e-commerce project for selling old books and managing customer orders. The application includes product browsing, a shopping cart, checkout, user profile management, and an admin dashboard for product and order administration.
 
 ## Features
 
